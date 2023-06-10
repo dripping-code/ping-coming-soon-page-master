@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap');
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.atribution a { color: hsl(228, 45%, 44%); }
+
+body{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family:  'Libre Franklin', sans-serif;
+    font-size: 20px;
+}
+
+.logo{
+    margin: 3rem 0rem 2rem 0rem;
+}
+
+h1{
+    margin: 20px auto;
+}
+
+.span{
+    font-weight: 300;
+    color:  hsl(0, 0%, 59%);
+}
+
+.subcribe{
+    font-size: 13px;
+}
+
+.form{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+h3{
+    margin-top: -15px;
+    text-align: left;
+}
+
+.email{
+    border: 1px solid hsl(0, 0%, 59%);
+    text-align: left;
+    padding: 1rem 1.3rem;
+    width: 30rem;
+}
+
+.input{
+    border-radius: 50px;
+    color: hsl(0, 0%, 59%);
+    cursor: pointer;
+    margin: 2rem 0rem;
+}
+
+.submit{
+    color: #fff;
+    background: hsl(223, 87%, 63%);
+    border: none;
+    padding: 1rem 3rem;
+    margin-left: 1rem;
+    width: 10rem;
+}
+
+.submit:hover{
+    color: #fff;
+    background: hsl(223, 100%, 88%);
+}
+
+.dashboard{
+    width: 47rem;
+}
+
+.social-icon{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+#emailErrorText{
+    color: red;
+    font-weight: 300;
+    font-family: italic;
+    font-size: small;
+    text-align: left;
+    display: none;
+}
+
+.error #emailErrorText{
+    display: block;
+}
+
+.error .email{
+    border-color : hsl(354, 100%, 66%);
+}
+
+i{
+    color: hsl(223, 87%, 63%);
+    padding: 13px 15px;
+    border: 1px solid hsl(0, 0%, 59%);
+    font-size: 15px;
+    margin-left: 20px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+i:hover{
+    color: #fff;
+    background: hsl(223, 87%, 63%);
+    border: none;
+}
+
+footer{
+    margin: 5rem;
+}
+
+@media only screen and (max-width: 600px) {
+    body{
+        margin: auto;
+    }
+
+    h1{
+       font-size: xx-large;
+    }
+
+    h3{
+        margin: 0;
+    }
+
+    .form{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .submit, .email{
+        width: 22rem;
+        margin: 10px 0px;
+    }
+
+    .dashboard{
+        width: 24rem;
+    }
+
+    #emailErrorText{
+        text-align: center;
+    }
+}
